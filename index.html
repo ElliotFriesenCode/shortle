@@ -2642,11 +2642,12 @@
      num = 0;
    // left with  stringGuess
    let arr = handle(stringGuess);
-   
+   let numGreen = 0;
      for(let x = 0; x < 5; x++){
       document.getElementsByClassName((currentIndex - 5 + x).toString())[0].textContent = arr[0].charAt(x);
        if(arr[1].charAt(x) === "1"){
         document.getElementsByClassName((currentIndex - 5 + x).toString())[0].parentNode.parentNode.style.backgroundColor ='#6aaa64';
+         numGreen++;
        }
        if(arr[1].charAt(x) === "2"){
         document.getElementsByClassName((currentIndex - 5 + x).toString())[0].parentNode.parentNode.style.backgroundColor ='#c9b458';
@@ -2657,6 +2658,10 @@
        
       
      } 
+        if(min === 30 && numGreen !== 5){
+      setTimeout(function(){ alert(answer); }, 500);
+ 
+     }
     }
     if (event.keyCode === 8) {
       let currentIndex = 0;
