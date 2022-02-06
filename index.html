@@ -2587,7 +2587,35 @@
     document.getElementById("tf").focus();
    }
    document.addEventListener("keyup", function(event) {
-    
+    //isWord
+
+   let currentIndex = 0;
+    for(let i = 0; i < 30; i++){
+         let str =  document.getElementsByClassName(i.toString())[0].textContent;
+         if(str === ""){
+           currentIndex = i;
+           break;
+         }
+         if(i === 29){
+           currentIndex = i + 1;
+         }
+     }
+     let G = "";
+     
+     for(let x = currentIndex - 5; x < currentIndex; x++){
+      G +=  document.getElementsByClassName(x.toString())[0].textContent;
+      
+     
+    } 
+    let isWord = false;
+    for(let y = 0; y < wordsList.length; y++){
+      if(wordsList[y].toUpperCase() === G){
+        isWord = true;
+      }
+    }
+
+
+   //isWord end
     if (event.keyCode === 13 && num === 5) {
       let currentIndex = 0;
     for(let i = 0; i < 30; i++){
