@@ -2652,7 +2652,7 @@
        if(arr[1].charAt(x) === "2"){
         document.getElementsByClassName((currentIndex - 5 + x).toString())[0].parentNode.parentNode.style.backgroundColor ='#c9b458';
        }
-       if(arr[1].charAt(x) === "3"){
+       if(arr[1].charAt(x) !== "1" && arr[1].charAt(x) !== "2"){
         document.getElementsByClassName((currentIndex - 5 + x).toString())[0].parentNode.parentNode.style.backgroundColor = '#86888a'
        }
        
@@ -2721,14 +2721,7 @@ while(z < 5){
         t[i] = '2';
         tempAnswer = t.join('');
     }
-    if(i === 4 && foundClose == false && currentLetter !== "1"){
-      let g = guess.split('');
-        g[z] = '3';
-        guess = g.join('');
-        let t = tempAnswer.split('');
-        t[i] = '3';
-        tempAnswer = t.join('');
-    }
+    
     i++;
   }
   z++;
