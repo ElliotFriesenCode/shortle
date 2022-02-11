@@ -8439,9 +8439,11 @@ for(let i = 0; i < maxLetters; i++){
       }
     }
   }
-
+if(letterCount > 5){
+  isWord = true;
+}
    //isWord end
-    if (event.keyCode === 13 && num == letterCount) {
+    if (event.keyCode === 13 && num == letterCount && isWord) {
       
       console.log(num);
       let currentIndex = 0;
