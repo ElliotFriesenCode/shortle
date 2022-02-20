@@ -8304,7 +8304,7 @@ var letterCount = 2;
   let columns = 6;
    var arrayUsed;
    var answer ="";
-prompt();
+
   chooseWord();
   
   var maxLetters = letterCount * columns;
@@ -8362,6 +8362,7 @@ for(let i = 0; i < maxLetters; i++){
 
   }
   createGrid();
+prompt();
   function createGrid(){
   for(let i = 0; i < maxLetters; i++){
             const grid = document.querySelector(".grid-container");
