@@ -6,7 +6,7 @@ How it works:
 4. Colors are changed accordingly
 5. A new line is created
 Languages used:
-html/css for input and styling
-javascript for functionality 
+html/css for input and styling,
+javascript for functionality, https://elliotfriesencode.github.io/shortle/
 
 
