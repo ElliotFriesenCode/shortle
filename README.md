@@ -1,4 +1,6 @@
 # newwordle
+Abstract: Wordle clone with changable word size
+<br>
 How it works:
 1. Every time a letter is pressed it is sent into the grid
 2. Once enter is pressed the word is checked for validity 
