@@ -1,4 +1,4 @@
-# newwordle
+# Shortle
 Abstract: Wordle clone with changable word size
 <br>
 How it works:
