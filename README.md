@@ -7,6 +7,8 @@ How it works:
 5. A new line is created
 <br>
 Languages used: html/css for input and styling,
-javascript for functionality, https://elliotfriesencode.github.io/shortle/
+javascript for functionality
+<br>
+https://elliotfriesencode.github.io/shortle/
 
 
